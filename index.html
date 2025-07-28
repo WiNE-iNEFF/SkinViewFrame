@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SkinViewFrame</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css" integrity="sha512-fw7f+TcMjTb7bpbLJZlP8g2Y4XcCyFZW8uy8HsRZsH/SwbMw0plKHFHr99DN3l04VsYNwvzicUX/6qurvIxbxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="gist_style.css">
+</head>
+<body>
+	<div id="main" class="container text-center d-flex justify-content-center">
+		<div class="row align-items-center">
+			<div class="col">
+				<h1>SkinViewFrame</h1>
+				<h3>Lightweight iframe skin viewer for Minecraft</h3>
+				<div class="buttons d-flex justify-content-evenly">
+					<!--button id="myInput" class="rounded-4">Create</button-->
+					<a href="#doc" class="rounded-4">Documentation</a>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card text-center">
+					<div class="card-header">
+						Skin Viewer Preview
+					</div>
+					<iframe class="card-body rounded-bottom" style="margin: 0; padding: 0; min-height: 65vh;" src="/skin.html?color=c2b4ff&data=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAQKADAAQAAAABAAAAQAAAAABGUUKwAAAMIElEQVR4AdVbC3BVRxn%2BT8wNcJPADXmUAn1gkvIoaYXaYVBBaX1Mx8e0VKGOMoWqFHkJQrGRKkNboFIUEdqhnXGo045jK6DV0Y52EE0dKUUCSAWBAFUSGhMgN5JcIElz3G%2FP%2BU%2F27N17zr25gcLO3Oz%2F3v3%2F%2FXf37J4Ti0LKzE9PtGMFUYq3JQg1CsOoN6%2BcHWih%2F8RZVqBAlsyqMRPsIBMHD%2B0ObD8nSFnlcRBA40Co%2FGsVzk2n40Vi5FvEaKPw6IMG%2BGop%2BkiHZQb3OzQD9NEGDudRdB4bvdK17jzaN9FM%2FUorA1RFHnUOgsq7HPBeWuCb4%2Bsjt%2FiaOUAv%2BfBMkdAAwGHVWTUDOBiZNpqJ%2FPj8L%2FvEByQ%2B7MPpcgcArfH8B8xOe0GJgCpKp1N5f5nuEXoHWO0fCVzFqyh4FwhrNTQDYABOY%2BRjBfmuPZtONp6RcE7hEJf2%2FlRBcz2Ix721sM8zwosaj7JK5yCAxrBJjvmsG2%2B5wCDFogMkHE%2F00H69Z79vhDHnkfZhI%2B8ZdYFvWB32hdzn6KXOBT57upyOy12AHUdac2ozTVcw4Sw7YkiJUR%2BOx%2FJFBqk%2FNxgme0G0RVM%2F6Q1YkFy6vBx0Hk6jZkd0GvM5QKn43KjKBw2Ok21TUdTZPgFLGiu4tbri2%2Fl%2F8zm6aOrdNpwvKhhAehAw%2Bmzqq5GNHsy0oDr0OYAzwmQkiMfynPaMq7WJd3rbVKr90yBPDI4zAuedQXJIaiDmvHmMpv9iLIumXRsDsHbDUqpeNVcawWK3c%2F8R2l93ir7zzamSBhg0pzNE1cvn0to1S9NuNEzwdH2TIuJM6R9v3%2BHNbcBOYGziNcyvo6iHgLm8kKFmuLu5kXJKh0gch52TB2%2BjVfN2Uc7gIdLZz438PUWfn0kjqv5Bc1Y8L5voPtfo6XOb0qZY8EzpDhkshr5H1kNEQ%2B%2Ff7qi7%2B3%2B8rZ3NOdO00JlGHAQMAiRefuBtT85n06OaAbkNsuO838951HEKKnC6ctZYKn94FOUUH5VWsEq%2FJ2jdJ5yRWla9ztsZIMD2pDDwdhFc4WxLwj1PKLtAQf5Aamv%2FnxSdOeYtWbe1nqGTDRvliL%2Fwx13eyMeE8w%2F%2BYIuHox2Hn0dVlcnPA7AdVqyLtVu8OUaXXHHxEOPb35tdeqlba3j3%2BcbkByFX9IGFG1xILIaGbfB4ez%2BPzwACoJet239Dd0y41XMeqc%2FByWTEdbueQWYUxUp7AiKIzc31zKILbXEqLLouSccTEMANw8p9%2BiovHfhUw%2FFA%2B6NvGSftI2vwW9j6js%2FsSjs%2FUN8nLJC0ngR1pSCc0%2B7AjtWeWHd7I437wk8kzunuMXsJqFNn%2Bb9qpJVVoyZnbM24C2Rs5RpW6PMMMMbiYlazwmhSzaTejDwbtfQ5z4xHO5voqUgZo75a5cW0lbZLSHrT4LerCdvjuAdTpz8cYXlfIy6Sigc9NQiqLnRY7%2FDRfYFrgsWLFhRgcH68TtpSnR%2FkOtnqNgpZBAFlc6xC1vxHDQB3gjvKNctyzXLAy%2BuX0vHh6yQL8iqP5blOx15YAHLh8AvDxnvOb3IdKiAnIOoiARgdwm8TOY735RyC81e65MLh%2BQ3OqLPzaicKhbP4cUEW6AWjrgeCA8WyqUaL%2BVOO%2FZVBuvHYvbSz8mMeDmDSsd30RuUEH60vEDnAU%2F9wlEzOp9uA7jz04LD6S2WLZeDw4jfqafnBc9J5pkMPzg8s8V8xMR91dbSOHqE6X3tf6VebqkkfXfa94jNnxWOaj%2B4ZU6fAedcpSAbNTb%2BlYEzPFJZW7cP5SjyFItXccs%2Fpw%2FTa0NHS%2BUutRD%2BKVHh9mn7JyWiWDaqlfzfGZvhkjm19jN59ba00yFOA61Qd9hlIA%2BHFNkz06021lH8mQWVVPZKfbamlG6sihCB0ieNFvDlBswXM5XeDx9OtY4imKdOKeXrtZS8cQzqh8LalCzPOo8PyTM%2B2Xj9puJwGup0PTYtSMRx6xVknyqc5EjfFIlT%2FpgN3iVtZ9OfxWBPleV7plpJxoygM8c80BRqb6mlI2fBka1lSnokeoHmTbieq7DHUIUaYS%2F9IlK67jehmEQwUMXHpYmeC8ihKJaOJFh5%2Bh%2BKtnZQXjciMAT2s5C5qd%2BdLz7GbvtXcIfXWRE6J%2FBIgfkqJUjlRk0PYlF%2BhcHpAfaqkky1jhs2jQw3PkOufNDbqPpKjD6S%2FWKeKRNMo%2FdyNKZci1EEJajvtOFs22nEeMqCHFWMGbCjNC9ML5asOqzAUMf9T7ToIgqmcPSRGforDYecxLTDaOYkIRcSNfV5rlE4fxnrhTBmTHZ1mdXVeSvmgjuOvqQwoEEPhlkrORxdXFmoWMdZBQVAVlkWCV%2FQz%2F3ZGGek%2B8CaiwW5CfkDsmglxb%2FHQ363gR2G1sb6AcTnBi6RuD5kQN1x2qHJh9wGqLNpK5%2BWHqqPDximgC%2FUG37XndV%2FkJ975KS%2FTUjnJ55LetNdbHXWR762Na1rvsmVAUFT6aqRNd4dB7Zp4vjQ1CYTRTBeSvAbwNOD013cDts3yjHMN%2BaA5PkLcPxYMKmFxrw7S8YRc4LJMAXYUjoc5j36wvNo5pk1XXnupfMAnQy5QdXkTnnUGmIyCtnf3P22%2BxlZhk7wpiyCXyUjqdteX2fbipuAtUNfpUxxOs8E%2Fv%2F6WBzMt03p2QCZkauuKyKsByLbBH8bE62S3YGQZ5nq2dcnGD3jQlGH50LovVum%2BGHW1oxtvTnYcfDi%2BtCSZ9%2BLkZJpq75qC1%2BTZ9q%2Fu9jvEOJxfYbX7soKzBHphjhp3AWRANlnQJ2no9nxpqW2PmkR03w7Lem6M49ATynqw7oyz0PEUgFrJKEcZp8ewYgwAjsjeMTnMgoH%2Fsp1n3Tnu47b6M4gFkjiFi8V1F0rNStt%2Bz%2F0SbexdESoWb8FWWc7o433gwOI8OR0caUe%2BrVn%2FdI25PXXSkyAWnCVxJ6pPUJ1MoRP3L5EaW7a9mrRt6pny7c46%2BvmwTyTt7XipyXt7T%2FMOxJcre%2Fb9RdqH7OrG8ZJZ3WFZNe58PiEOp0h9OD95hWUh1Vu6o7TibLutXGfQjBqhI%2BQKSsWR0L230NtkPCkA7DwEvkcVjsPbWDy8lpeT7T3X6OEaPQ9C%2FObXpAOHQf%2Bo%2BMCI7wOwzyP11%2BGNsHijjrVA3f8vmk%2FzPvNJI%2BrjpoHoGfDYIOf8%2FmRrRRrawSLIpqh40j0nTBYMFd9ZiYxe2GBZWNy6BYxrsIcPWRYvgpgKyGBcjuSKC6L%2F1iUo7HV51gHQXdDfNf7n5NukXqDkRvoFtgl99Tpt79Nfopyy671mwv7%2FwHRHoA6SfhQ3LoJea%2B8TkOpwlE13Utm8KgOQjaOZ6l6VAUi1W2TqnCqfymbgfFQNpIIHK98UBT12qd8UpLLFdHUNYJpewyH8hg%2F9oM5K%2BxSJ9SJpG0yyFkKA0%2Fz2GO8Ouahzjm%2BA8cqdCzvAzwBMR63qqnQVTiWT6RE6ZQZg5dRXTLUDDCMDuDNwCgFhnGWAf7%2BhlpZpH1NAXpeFjonGttQa%2Bun0UdXR4ZRrAAyr24euyDg6q%2F5Ax8tV%2FLjMNDjPvHRqvB7XywHx%2BU1fFGMA2PHeRrfyi0%2FKL0wz7SBPC9RqwYcRahDgfPld85Met1WddOGUUyBdA%2FoUwDrAGcE2gCML1Ndh7Gzr1hUs5tT9ie5Y8EuCk7d%2F%2FrseT%2F9CBHx8gBX2YMQGXpzSZc%2FYmZvkrzEDWCmdmp1VayxswLlg%2FqvOg87yLMP1yId%2BSvt%2BtjDJ%2BdbSHSwigwPnu5ve9WhBwMaKDuk8al0u6wDoBk344%2BIjLLWkch4yR579mhTlOY6RPzLoaUkDjOBkUuD0grq8pJFnG8YA4ECh3sOxsKnmVFZrfD%2Bgz2NdN5UMnvvxhXpO8RA50qzX2FHLoKyljHJG8DEzQHzPAXz%2B5yOxejeQyubi%2BK6k7weqm2%2BQ4t5rdvWwDo6LJzqPC%2BQVKct%2F4JheRrY%2B4mWBzssWT5ka6RrmoKny0Zj7FYNKNMCJ%2BHFa8qo%2FABDjLACcP%2FZemtV1HiBtyS2k8zWbvR0G68D19yyTPPWPPsXmdjvb6LM5PZ%2FZccb6MkA1ki68qKUwSXRAgfOFSRJDI1xoE7o1GtFF4RwXOK4WldcSb04aRBEA3%2B3TWhIXB4YC3f8DmJEACsZNHa0AAAAASUVORK5CYII%3D" frameborder="0"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="doc" class="container">
+		<h2 class="mt-4 text-center">Documentation</h2>
+		<div class="docs align-items-center flex-column d-flex">
+			<div class="card mt-4 col-10">
+				<div class="row g-0">
+					<div class="col-4">
+						<iframe class="card-body" style="margin: 0; padding: 0; min-height: 45vh;" src="/skin.html?data=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAFIUlEQVR4nO1bzWsbRxT%2FrSOoC7k4rAIiykEQdWnrQ%2Bkh50DxJQfTolNMjpWpg%2F8AUyjG9OI%2FINTQ5mhCDhUuDTSHYFpyCjn54Aq2MugQBUEkYh9c0KFhejCzejM7X6vVrjaJfiAszceb99689%2BbjjT1YsPXyLgOAlWpDKH%2Faawm%2FV6oNlFEBAAzQj%2Bp3r%2B97tjFM2AgbbC9oKWmY6lyx4NKIC0c%2FVCFUeACx%2BjQwCWgTfiNsMBt9q%2FYO2QGjwlEM0AcAYebl319536SaoaxRSkuAC%2Fuwd18oX6tuQqe4PODqHk4u4ALZJfLC9nlTaeZ7QcvT1VF88C7gZAFcMFXZ015LEFy1EhQZVgVwIQboCx9ax5VAP%2B%2BC8ADgpV3nab2tv6r%2Bo6WP8frVG%2BuSlhQbYYNdvXYFALBz%2BRcl7e3zJvO2Xt5l8joOiEJmWb97fT8KVtNQhIvgFF6SIJdFPQ2SaRSRVHAOqwJsa7mpjYsCfv1nH1evXUnEtAu2z5vs9as3APQ7xo2wwYwboab3AADwG%2FsBwHizs1bdBAB87f0o1E8CzhyfwbSK4IK70NkLWt7MXeDZv39MffY5uDJMFjAPgrNeBtMel9MiNviDwa6wfz4ZHaMzOo5%2Bt%2BpHRobl%2FjrU%2FADdYRj7%2Fm15y0j%2FkB0w3vbJ2SNnvnSY2mHoXUXq43Aa3PRvAVCfNfKC1QKo%2BU8T8g3SrOAdsgOlz3I%2F06HmB8Z2vN5GT27nAhfeXI%2FhC4B4jOV%2FTYzV%2FECYNW7KtF7Vh0LuI985msoprZofCLRk3mwQYgBVgotfllEB%2FPHAKlocA%2FRjbfhvFcM6Hmg5FdZEy4SFafmfzaeL4vMyFqiWk0bjaUVv042TK3%2FdYWiNDSqUdIOYiHWHYWT6vA%2BfVV6ncoHuMIxMNTaOL94l0k2SzJ%2BJt6STUgLEgSPGfXPkpr5YRgUvhn9F9bISKNPdYYguQtz0b0VxQVZWGRWU%2FUrsMBXxJ%2FFGhU7qXsog6AquhAH6kUAqWjRY0n7AWCFUEVRhNMLb%2BJtkSS2piCY1I9kCAGgtAEDMAjgNSo8qzIS0cagk3%2BjQG1%2B%2BC6wvLgMY7wrro2WsVTeFwblA3WGoXuP9CyXpTF4Gt5KHvfvRBQxwcSlD%2BaCoIcDOyXeJFBAdhylctr9cKTcWJSY067EpuKqUwpX55OxRNJYrb4D76VCIAUn2%2FbytrAAe6VWmqQuq8qoit%2B2MjgUlzDHHHHPM8T5jvb3Kbj%2F70ulyNS0Kdym63l5ldz5p5jZe4RQAAJ3Tv3Mba6a3wjLW26vs3qff4%2FTtILcxC2cBp28HH6YF8NkHgPrS57mNWxgFAPnPfmGw3l5lR%2Bw5O2LP2Z%2F%2FPc5tCQQKZAGzmv3CKGDpUjlX3%2BcohAJ%2B%2Fux3D22w3rCX%2B9hTf5wgvw%2BgOfz64rL1QQTvX%2FMD%2FHSyE5VPmv%2B3oXD7gLwxV0Ceg2X11iANUvuV7k2QLUnh%2Bv5A18%2F2lsgVmawC9Gqc5h2EVBdJb9Gcgtw%2FBkPKbhJktgzKDy7kcg5BWCKcLg2WJGvkglxjQJHeBXBkrgA5tS0nTFxT3fR74V1A9X6Awpbjp%2F3TPOBwQSYWwHN9NA7I2V8a5WXBaK7QRGcayNwFXDLBLn3p90neAeiQmQJ0L7yStM8DqWMATV%2FTvP1KtRH7bxK6D%2BDvD%2BqLyzjpjXeIndExcHZxcNK9C7h3Yzst2xFS76YanS%2B0tzemlHaSNwiq9tM6HWZ6HyC%2FMKFlk9DJAv8D4IcNiE%2Btv9cAAAAASUVORK5CYII%3D" frameborder="0"></iframe>
+					</div>
+					<div class="col-8">
+						<div class="card-body">
+							<h5 class="card-title">Default parametrs</h5>
+							<p class="card-text">Default parameter of <span style="font-weight: 900;">Skin View Frame</span> is <span style="font-style: italic;">data</span>. This parameter allow only a data with base64 format. How to get base64 format skin you can read <a href="#python">this</a>.</p>
+							<script class="card-text" style="background-color: black;" src="https://gist.github.com/WiNE-iNEFF/fabfbbcc163cc3a4d5a26a4f963a94d1.js"></script>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="card mt-4 col-10">
+				<div class="row g-0 text-end">
+					<div class="col-8">
+						<div class="card-body">
+							<h5 class="card-title">Color change</h5>
+							<p class="card-text">You can choose background color with add <span style="font-style: italic;">color</span> parameter without <span style="font-style: italic;">#</span>.</p>
+							<script class="card-text" src="https://gist.github.com/WiNE-iNEFF/e53a694fa1bdb04b6d9959d2f096bfc4.js"></script>
+						</div>
+					</div>
+					<div class="col-4">
+						<iframe class="card-body" style="margin: 0; padding: 0; min-height: 45vh;" src="/skin.html?color=c2b4ff&data=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAFHUlEQVR4nO1br2%2FrPhD%2F9GmVBmoyGFJppCRSyUilDpT0T1j%2FgA2Mjox1YGUjhS3Y2EgHRyqFjEwqKZkUUjKpJHDE43ng6fIS5%2Bw4v5bv%2B24faVqSs8%2Fn8%2Fl8PrstZMD3%2FdBED4LAWH88Hrey2rCRQUqJwWDQAoDNZhMKIeC6bgsAPM9jZbRp%2B5etEFJK9rlumAbA9%2F1Q13lAr5g4DmyEkFJGf3EIIWyqlwK1SaNPz5vNJrNzNrBSgOM4AP6Yu5QSvV4vIVy32wXwVyH0fb%2FflxYw3nHuO42yau42ow9YKiALqiV8hWUQdPPc1vdYKYBGnrDb7SCE%2BNKO1oVKpsC%2FjEwFcMvcbrdLfVOtoWnleJ4X2kyDlmmZyVrjCWQhReC6bktd58tCjRNMcUQlTrAMaABs%2FAkJDiDqHAcqEx%2FcOP84%2FZeu8TwOLqt%2BEboK3%2FdDx3Ei57vf743LnG37B1LK6EVdxwndbhdCiFQw9PHxwTKlMvRfxz%2FL7CnYGQwGLRrxeMfpudvtJniYrEOlR6GwKdR9eXnB8%2FMzhBBwHAfb7Rbb7TZRJitULhJKk8KXy2W4XC6jzq7Xa6zXayseWTjgQlzXdQEA7%2B%2FvAICTk5No7Qf%2BjGSv14uUMBgMcHR0lLCIOF%2BdQqSU8DwvdByHHTVq%2F%2FLyMkGjd1IKB9%2F3Q3LiHH%2BiH8SFIUHb7TaklDg%2BPo46LIRAp9NJvBM9CIJoinAdVvlzdE4RasdV9Pt9bcdViyP%2BJC%2FRIwXE%2FwdBEFkBdXg0GuHz8xMAMBqNEg0IIeD7fsLZcCbPfRuPxy2K2%2FPEDp7nhZz%2FiLdFcQDHn%2BgpBmdnZwmzUoOet7c346hkbULu7%2B9NZDw9PRn5SylT%2FIMgiKJTALliCet8wP8VtQVCrusmlj3f9%2BtqqhS%2BvQW01DmfF5PJhI20bCxAShmV4zZTUkrjPuP8%2FDzx%2FvDwED3H%2BBl9AmsBFPDYQo0l1A6p71x5TgYdOp2ONragpdoWWgWU3c7e3d2xzyoeHx8BICE4PRONw2KxYL%2Fd3NzkkpN1ghTYFEG8ntpxnWJNCjLRqqijdYJlLICbPmVyBnWi8mVQ3fmptDpT60V4VaoAKSXa7Xb0rIL2GGqdKtvPi8rjgMPDw0K0pqB1gkDxebtarVLmuFqtMJlMUmVNa30QBLlkKDQFuMQnMeIEyEqUzudzzGazlCe%2Bvr7GdDrF6elpqo7JdPOYdaEpYEpWFJ2f3DJUZDn7CiTyATZoOt9fNTL3zv1%2BP7FXyMoH%2FGv49rvBHwU0LcAPftAsavPo0%2Bk0nM1mLfXZVC4vTde2rg6HWhUQfy%2FSkTKwVcK3d4K1pMX3%2B324Wq1S39RTXOBrL1RxqO1cIM8JcJOofAqYLi5kXWpoAqwFDIfDEABeX18LOcmm8gFFcECdjYOEHw6HoaoEtbxKn8%2FnuLq6Sh2CXlxcYD6fs0JUlQ8ogigfoB4dl8kHcCfAWafCTYG9H2CCTRmdZ9fVNZWve5WoPB9Q9n5B%2FPw%2F7gNsz%2Fry4tsHQj8KaFqAplF6PpW9X6AifsZvQlU%2BoRYLoCutRZB1xq%2B7G1AUtewFaPkqIuhiscDt7a2Wrp7%2Fc9tp01aYylOZ2jZDtlftOeS95KAiT46hlinQ9A4vDxr%2FvYCKvL6jbKT4n1NAXuspa23fPg6oJR9Q5n5B41Og3%2B%2BH8XxAXoa73S7xM7ssqEpqfApwP43RbZc5C%2BHqVyVsHUhZgE5ITgnqVtlU35aeF2WnwG%2FNN1ZofFPtEQAAAABJRU5ErkJggg%3D%3D" frameborder="0"></iframe>
+					</div>
+				</div>
+			</div>
+
+			<div class="card mt-4 col-10">
+				<div class="row g-0">
+					<div class="col-4">
+						<iframe class="card-body" style="margin: 0; padding: 0; min-height: 45vh;" src="/skin.html?rotate=true&data=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAHwElEQVR4nO1bS2tbRxT%2BruOA40S2%2FIAIKVZct6BK9iqB4i6Ek9BAwY9NfoBxlk4DXbWbLruJV4FSL%2BP4B5i2TgQBF7vBi4iAs4okG1zVlZFwQH5FiS0o0u1COdNzR3Mfkq4Thfrb3Mc87syZ85oz52qwQWEhqbf1epRlxXwBB6mceM6mMwCAwEBQvOv74SvN7ht2%2BHvq5%2FLluTstdu%2FqgW0HNPliviDe0T2VZdMZMXnVc6Po6ixryYl7%2B%2FScnLi339VZbpiwgAMCNAM67t%2FVLg20e%2Bn50kC7t%2BP%2B3eYgAF%2FpV1tZvNrKKssaBZ%2BwW5MHaiAA1wNmOuFjRMMcwBXexf4ALvYHlGXNio9CB5wkWt3ohFZaZQabHdr2j7%2Fr3rDfdbkmH8Gq72K%2BAM%2BtiJaZml0Jzk1fd%2FP7TvtsAWBwZtwC9WlFWCrzdpaupcZnVtz6dmp8ZsXbWbrmpK5m5ek1imK%2BYMtZZ0f6NAB4%2Fe1P%2Bt7rM%2Bh%2FMN2Qidu6Pat3d5Qcm8oW7ulxb69e8H5qIWzH%2Fbtad0ep4e%2FXMnkA0P55uq0DwM7qBgDAFw2JwpGRewCAp0%2B%2Fx87qhkHJ%2BaIhQzlB1Y9cxsuPf%2FkV2T%2BP%2Fwg%2F%2Bs5VHZAan1kJfHrumh0xBAGAasVlt5K83EzpyWLAn0kJusX%2BhFrEQFgBoKK4sukMAgNBeMN%2BMSGaJAdNnurIbakMgHiWcZDKubJbbAStL5afAcsQHpyZLy9PgiZHdbLpjGjL7wEAy8CVG18KQgHAi%2BVn7s%2BmDlRRP377ga6qSBh%2BcNtyxbhVkUVIVrLc%2FBKBPbcilv3LIsv73nu8gstzd2riKFc8QQ4%2BoEQsDgAYHB1GW68Hbb0e7KxuiMmacZVT8PqlzXUcJrdqHq%2FrBHjfIGtSDPuhaSvA89rau04AzpaDo8NVZYBaOdbjjXrDfmFa6%2BUAYQVIiwMVO28XzFBZCtkMqnRArfVV1sdMpxBkM2tJAFJaNDjBUu%2BeZULQTo%2BvnhM%2FwaqcvjM4Oiz0BhHYzpvkgVlVfXK1zdDKG3vDfkFhM5aUV6yt14O1%2BSUAwNXJmwD%2B8%2Fi8YT8SsbjwHAlyfW%2FYD180JN6T0rRzzeWotN3uU0kAlctKgzpI5QziEBgIWnZOA5b75FylAiciTcQXDSm%2FxUVAtUgyF9tBGRGS2X9wdFgoNOqUX69O3hSreZDKGSZDWJtfEgOm%2BmYbMC52cjjeTv55mRNOUG6HiYXlCA89X528KTZHsuvLXWdZ6cl1ZG9Shiw6fIJ2VoNEwZEO4C6qLxoSH5X3BUSIYr6gNGHcLeawsi4k%2FwCqOMdsD9HW6zGMWbX3cKoHWqkylxtqzFdXtSkiJUdKi95RXVKA8kR80ZDwFM10kPwtFeR%2BzQhmBcN2GHCmOGS7braDNGN%2F1c6RzB9BRTj%2BbT5WMz8CsDeDggB221v%2BnriG9ABxAGdh2Xpw1icFKE%2BatwUqokN15fiE7LdwcC621QF84qXN9co9Kq6lD9VyTVdv2C8mT0Th91QnEYsLsaAyGjxZFhqsHDHinOSLhsSVCO0rH6EY9mP30TJ6xm%2BIKy0eWSZLAhykcthbfILjoQh8AA6TWzhuaRf3GIpgb%2FEJMBRBNp3BuZdJZN8Rwlc%2BEpPiqynrAAI%2FNSZi8TZ8NbkFyaYzhitxVMX3X6667rS0iz5OcYpTnOIUFvigIWkVMlOz%2BwAQnJvuAoxBUBlmNp63sfUD6humOeSobSIWN9hjqwElJ2bKOnSt1shuI3A9QYLbXrPDFBUyU7P7fZNj2tvdt5ZheYIVIanMiR%2FgOgeYeWFr80uWiRNvdt905mJxBL64omV6ZvdJBOxY2AxO27nOaoWFpA6YxwOsgpTJiZly3%2BSYtj3%2FWL%2FQc%2BEwODfdpdIBToKdFOewI4TrIuC5FdEoKpSIxZFNZ5CIxXGQytkO%2BnzPea2t14O%2ByTHLem29HkFoFWrJeTiRg5F6Dzzf7r7V1%2BaXtMBAEGW97LVv0Tia5mSI2J9EZ%2Fv5C0tl6CT1xgmawg%2BgyZMC9ZWP0P%2Fwm6YY23tFYSGpFxaSenJipvyhx%2FK%2Fgets5mZ%2BAQDkHi6ie%2By64xBXrWgaJUiQ43wHib%2Bg6zrOfPb5iXyv6Qggwzv4iYED3EbTEaAqa%2BSEOaBheTKTeTksLofWeXBURi35AXbepR1c5wB%2Bru%2BLhkROEB1nAea5QfKRlortnfy4YRVD4Dg70qedyP8CNCF%2BhrizumFIoKa4v3y%2BX0so242wt6t%2FjMjZI5QZRhOWT3FUK8gJopogf2d2QuwkHkB1XBEBkmMu23b%2FCVhlgFA51VHpBLvVd%2BovNEwA%2BX9BgurcjkJkdO4vnxzxtkRAlcw7yQ%2Bw%2B%2BGTlKdrIkBHVoAxx2BndQM7qxti0KQki%2FmCoS1XjHbn%2B1yhqmAXD%2BDxhIY5QB44RzFfMHCBnGNAeQJm7Wv5dr1w3QzS6qogy72T8325Lyqz0iFOvEaq4woB7HIK%2BAdJN6jO93kusSofwOo%2FBI5aNkwN6wCaNA9mlDbXRb7B7qNlYd%2BL%2BQKy6YwhsyQ791vl%2FbtraXMdiVgca%2FNLhnxFrvQo48wNP8A1K0A5BIfJLXRG%2Biu5BOx%2Bb%2FEJuie%2Bhq98JHIJzr1M4hBA1Rn%2FUASBgaAgGM8N4N%2BlhI5G8C8Bv5exKPZXjwAAAABJRU5ErkJggg%3D%3D" frameborder="0"></iframe>
+					</div>
+					<div class="col-8">
+						<div class="card-body">
+							<h5 class="card-title">Rotate</h5>
+							<p class="card-text">You can rotate your skin with adding <span style="font-style: italic;">rotate</span> parameter with flag <span style="font-style: italic;">true</span></p>
+							<script class="card-text" src="https://gist.github.com/WiNE-iNEFF/3471ea236ad2e77df26a5270e70e1ef1.js"></script>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="python" class="card mt-4 col-10">
+				<div class="card-body text-center">
+					<h5 class="card-title">Create base64 format skin in Python</h5>
+					<script class="card-text" src="https://gist.github.com/WiNE-iNEFF/a93a1d76d077ddd8490f57aeeddde79c.js"></script>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

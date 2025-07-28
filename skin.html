@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://cdn.jsdelivr.net/npm/skinview3d@3.4.1/bundles/skinview3d.bundle.min.js"></script>
+	<style>
+		*{
+			overflow-x: hidden;
+			overflow-y: hidden;
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<canvas id="skin_container"></canvas>
+	<script>
+		const canvas = document.getElementById("skin_container");
+		const urlParam = new URLSearchParams(window.location.search);
+		let base64data = urlParam.get('data');
+		let color = urlParam.get('color');
+		let rotate = urlParam.get('rotate');
+
+		let skinViewer = new skinview3d.SkinViewer({
+			canvas: canvas,
+			background: "#" + color,
+			width: window.innerWidth,
+			height: window.innerHeight,
+			skin: base64data
+		});
+
+		skinViewer.animation = new skinview3d.WalkingAnimation();
+		skinViewer.animation.speed = 0.5;
+		skinViewer.autoRotate = rotate;
+		
+	</script>	
+</body>
+</html>
